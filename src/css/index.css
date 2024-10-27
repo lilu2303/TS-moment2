@@ -1,0 +1,138 @@
+/* Anne-Lii Hansen anha2324@student.miun.se*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fafafa;
+}
+
+input[type="number"] {
+    width: 50px;
+}
+
+textarea {
+    height: 100px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+li:nth-child(odd) {
+    background-color: #ebebeb;
+}
+
+.taskcontainer {
+    flex: 1;
+}
+
+.buttoncontainer {
+    flex: 0;
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #888;
+}
+
+#addbutton {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #666;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    max-width: 200px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Mellanrum mellan uppgift och Lägg till-knappen */
+}
+
+#addbutton:hover {
+    background-color: #555;
+}
+
+#clearlist {
+    margin-top: 15px; /* Ökar mellanrummet mellan "Lägg till uppgift" och "Rensa lista" */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f7f7f7;
+    color: #666;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.completed-task {
+    color: #28a745;
+    margin-right: 10px;
+}
