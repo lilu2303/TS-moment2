@@ -4,7 +4,7 @@
   "description": "",
   "author": "Linus Lundgren",
   "license": "ISC",
-  "source": "src/html/index.html",
+  "source": "index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
